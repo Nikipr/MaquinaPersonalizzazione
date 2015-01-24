@@ -1,0 +1,180 @@
+/*
+X Media queri sotto 768px:
+
+
+- id appari deve apparire quando lo schermo è meno di 768px
+*/
+
+
+header{
+    position: fixed;
+    z-index: 50;
+    padding-top: 24px;
+    width: 100%;
+}
+
+
+.studio{
+    font-size: 13px;
+    padding-left: 4%;
+}
+
+.nav-pills{
+    padding-left: 20%;
+}
+
+.nav-pills > li > a{
+    color: #000000;
+}
+
+.nav-pills > li:hover{
+    color: #f4f4f4;
+}
+
+.carousel-inner img{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.carousel-control.left, .carousel-control.right{
+    background-image: none;
+    text-shadow: none;
+    color: #000000;
+    opacity: 50;
+}
+
+
+body{
+    background-color: #f4f4f4;
+}
+
+
+.iniziale{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.paragrafo-a, .paragrafo-b{
+    font-size: 12px;
+}
+
+
+.sezione , .contatti{
+
+    border-bottom: 1px solid #000000;
+    padding: 48px 0 60px 0;
+    font-size: 12px;
+ }
+
+#appari{
+    visibility: hidden;
+}
+
+
+.telefono{
+    margin: 0;
+}
+
+
+
+footer{
+padding: 25px 0 40px 0
+}
+
+.base{
+    font-size: 12px;
+}
+
+h6{
+margin: 48px 140px 60px 140px;
+    padding: 24px 24px 0 24px;
+}
+
+
+
+
+
+@media all and (max-width: 768px){
+
+    header{
+        position: static;
+        background: #ffffff;
+    }
+
+    .maqina{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        }
+
+    .studio{
+        text-align: center;
+        margin-top: 25px;
+    }
+    .nav-pills{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .nav-pills > li{
+        text-align: center;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .nav-pills > li > a:hover{
+        background: none;
+    }
+
+
+
+    .flaticon-next15:before, .flaticon-previous11:before{
+        background: #f4f4f4;
+    }
+
+
+    
+    .paragrafo-b{
+        padding-top: 20px;
+    }
+
+    .paragrafo-a, .paragrafo-b{
+        font-size: 24px;
+    }
+
+    .contatti{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        }
+    .descrizione{
+        font-size: 24px;
+    }
+
+    #appari{
+        visibility: visible;
+
+    }
+
+
+}
+
+
+@media all and (max-width: 640px){
+
+    footer{
+    display: none;
+    }
+
+    .sezione, .contatti{
+        border: none;
+    }
+
+
+}
